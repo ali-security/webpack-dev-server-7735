@@ -336,185 +336,6 @@ declare const _exports: {
     simpleType: string;
     multiple: boolean;
   };
-  http2: {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      negatedDescription: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  https: {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      negatedDescription: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "https-ca": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "https-ca-reset": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "https-cacert": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "https-cacert-reset": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "https-cert": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "https-cert-reset": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "https-crl": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "https-crl-reset": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "https-key": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "https-key-reset": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "https-passphrase": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "https-pfx": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "https-pfx-reset": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "https-request-cert": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      negatedDescription: string;
-      path: string;
-    }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
   ipc: {
     configs: (
       | {
@@ -577,17 +398,6 @@ declare const _exports: {
           path: string;
         }
     )[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "open-app": {
-    configs: {
-      type: string;
-      multiple: boolean;
-      description: string;
-      path: string;
-    }[];
     description: string;
     simpleType: string;
     multiple: boolean;
@@ -680,28 +490,6 @@ declare const _exports: {
     simpleType: string;
   };
   "server-options-ca-reset": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "server-options-cacert": {
-    configs: {
-      description: string;
-      multiple: boolean;
-      path: string;
-      type: string;
-    }[];
-    description: string;
-    multiple: boolean;
-    simpleType: string;
-  };
-  "server-options-cacert-reset": {
     configs: {
       description: string;
       multiple: boolean;
@@ -942,37 +730,6 @@ declare const _exports: {
       description: string;
       path: string;
     }[];
-    description: string;
-    simpleType: string;
-    multiple: boolean;
-  };
-  "web-socket-server": {
-    configs: (
-      | {
-          description: string;
-          negatedDescription: string;
-          multiple: boolean;
-          path: string;
-          type: string;
-          values: boolean[];
-        }
-      | {
-          description: string;
-          multiple: boolean;
-          path: string;
-          type: string;
-          values: string[];
-          negatedDescription?: undefined;
-        }
-      | {
-          description: string;
-          multiple: boolean;
-          path: string;
-          type: string;
-          negatedDescription?: undefined;
-          values?: undefined;
-        }
-    )[];
     description: string;
     simpleType: string;
     multiple: boolean;
