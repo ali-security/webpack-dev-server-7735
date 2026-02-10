@@ -4,17 +4,19 @@ on:
     branches:
       - master
       - next
+      - main
   pull_request:
     branches:
       - master
       - next
+      - main
 permissions: {} # none
 jobs:
   cancel:
     permissions:
       actions: write
     name: Cancel Previous Runs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 3
     steps:
       - uses: styfle/cancel-workflow-action@0.10.0
